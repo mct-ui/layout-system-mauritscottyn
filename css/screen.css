@@ -162,10 +162,41 @@ a:focus {
 \*------------------------------------*/
 
 /*
-    Object: Object name
+    Objects: Container
     ---
-    Object description
+    Creates a horizontal container that sets de global max-width
 */
+
+.o-container {
+    align-content: center;
+    max-width: 1440px;
+}
+
+/*
+    Objects: Row
+    ---
+    Creates a horizontal row that stretches the viewport and adds padding around children
+*/
+
+.o-row {
+    padding: 24px 24px 0;
+}
+
+.o-row--primary {
+    background: #e85e00;
+    color: white;
+}
+
+.o-row--dark {
+    background: #333;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .o-row--lg {
+        padding: 48px 48px 24px;
+    }
+}
 
 /*------------------------------------*\
   #COMPONENTS
@@ -295,3 +326,5 @@ a:focus {
         page-break-after: avoid;
     }
 }
+
+
